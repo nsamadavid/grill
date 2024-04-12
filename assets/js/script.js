@@ -27,8 +27,6 @@ const addEventOnElements = function (elements, eventType, callback) {
   }
 }
 
-
-
 /**
  * NAVBAR
  */

@@ -11,7 +11,7 @@
   -->
   <title>Grilli - Amazing & Delicious Food</title>
   <meta name="title" content="Grilli - Amazing & Delicious Food">
-  <meta name="description" content="This is a Restaurant html template made by codewithsadee">
+  <meta name="description" content="This is a Restaurant html template">
 
   <!-- 
     - favicon
@@ -21,6 +21,9 @@
   <!-- 
     - google font link
   -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
@@ -36,10 +39,32 @@
   <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
   <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
   <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
-
+  <script src="./assets/js/chatbot.js" defer></script>
 </head>
 
 <body id="top">
+
+  <button class="chatbot-toggler">
+    <span class="material-symbols-rounded">mode_comment</span>
+    <span class="material-symbols-outlined">close</span>
+  </button>
+  <div class="chatbot">
+    <header>
+      <h2>Chatbot</h2>
+      <span class="close-btn material-symbols-outlined">close</span>
+    </header>
+    <ul class="chatbox">
+      <li class="chat incoming">
+        <span class="material-symbols-outlined">smart_toy</span>
+        <p>Hi there 👋<br>How can I help you today?</p>
+      </li>
+    </ul>
+    <div class="chat-input">
+      <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+      <span id="send-btn" class="material-symbols-rounded">send</span>
+    </div>
+  </div>
+
 
   <!-- 
     - #PRELOADER
@@ -49,9 +74,6 @@
     <div class="circle"></div>
     <p class="text">Grilli</p>
   </div>
-
-
-
 
 
   <!-- 
@@ -67,7 +89,7 @@
         </div>
 
         <span class="span">
-          Restaurant St, Delicious City, London 9578, UK
+          Restaurant At, Delicious City, Po-Box 9578, CM
         </span>
       </address>
 
@@ -81,22 +103,22 @@
         <span class="span">Daily : 8.00 am to 10.00 pm</span>
       </div>
 
-      <a href="tel:+11234567890" class="topbar-item link">
+      <a href="tel:+237621311232" class="topbar-item link">
         <div class="icon">
           <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
         </div>
 
-        <span class="span">+1 123 456 7890</span>
+        <span class="span">+237 621 311 232</span>
       </a>
 
       <div class="separator"></div>
 
-      <a href="mailto:booking@restaurant.com" class="topbar-item link">
+      <a href="mailto:grilli@deliciouscity.com" class="topbar-item link">
         <div class="icon">
           <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
         </div>
 
-        <span class="span">booking@restaurant.com</span>
+        <span class="span">grilli@deliciouscity.com</span>
       </a>
 
     </div>
@@ -114,7 +136,7 @@
     <div class="container">
 
       <a href="#" class="logo">
-        <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home">
+        <img src="./assets/images/logo.svg" width="100" height="50" alt="Grilli - Home">
       </a>
 
       <nav class="navbar" data-navbar>
@@ -124,7 +146,7 @@
         </button>
 
         <a href="#" class="logo">
-          <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home">
+          <img src="./assets/images/logo.svg" width="100" height="50" alt="Grilli - Home">
         </a>
 
         <ul class="navbar-list">
@@ -175,20 +197,20 @@
           <p class="headline-1 navbar-title">Visit Us</p>
 
           <address class="body-4">
-            Restaurant St, Delicious City, <br>
-            London 9578, UK
+            Restaurant At, Delicious City, <br>
+            Po-Box 9578, CM
           </address>
 
-          <p class="body-4 navbar-text">Open: 9.30 am - 2.30pm</p>
+          <p class="body-4 navbar-text">Open: 9:00 am - 10:00pm</p>
 
-          <a href="mailto:booking@grilli.com" class="body-4 sidebar-link">booking@grilli.com</a>
+          <a href="mailto:grilli@deliciouscity.com" class="body-4 sidebar-link">grilli@deliciouscity.com</a>
 
           <div class="separator"></div>
 
           <p class="contact-label">Booking Request</p>
 
-          <a href="tel:+88123123456" class="body-1 contact-number hover-underline">
-            +88-123-123456
+          <a href="tel:+237621311232" class="body-1 contact-number hover-underline">
+            +237 621 311 232
           </a>
         </div>
 
@@ -232,7 +254,7 @@
               <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
             </div>
 
-            <p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
+            <p class="label-2 section-subtitle slider-reveal">African & International</p>
 
             <h1 class="display-1 hero-title slider-reveal">
               For the love of <br>
@@ -240,7 +262,7 @@
             </h1>
 
             <p class="body-2 hero-text slider-reveal">
-              Come with family & feel the joy of mouthwatering food
+              Order with family & feel the joy of mouthwatering food
             </p>
 
             <a href="#" class="btn btn-primary slider-reveal">
@@ -265,7 +287,7 @@
             </h1>
 
             <p class="body-2 hero-text slider-reveal">
-              Come with family & feel the joy of mouthwatering food
+              Search dishes & place orders for delivery.
             </p>
 
             <a href="#" class="btn btn-primary slider-reveal">
@@ -335,8 +357,9 @@
           <h2 class="headline-1 section-title">We Offer Top Notch</h2>
 
           <p class="section-text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industrys
-            standard dummy text ever.
+            Delivery is done to your door with seamless transportation access. 
+            Our potential customers can testify how easy it is to travel from one place to another with their meals in good state. 
+            Stay updated with our delivery services and pricing options
           </p>
 
           <ul class="grid-list">
@@ -435,17 +458,18 @@
 
             <p class="label-2 section-subtitle" id="about-label">Our Story</p>
 
-            <h2 class="headline-1 section-title">Every Fla vor Tells a Story</h2>
+            <h2 class="headline-1 section-title">Every Flavor Tells a Story</h2>
 
             <p class="section-text">
-              Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
-              industrys standard dummy text ever since the when an unknown printer took a galley of type and scrambled
+              A good meal is a means to remain healthy and live long. Grill offers an extensive list of delicious ingredients and meals, joint with appetizers. Scientists recommend a balanced nutrition recipe. 
+              Get all types of delicious meals from around the world including local Vegetables
+
               it to make a type specimen book It has survived not only five centuries, but also the leap into.
             </p>
 
             <div class="contact-label">Book Through Call</div>
 
-            <a href="tel:+804001234567" class="body-1 contact-number hover-underline">+80 (400) 123 4567</a>
+            <a href="tel:+237621311232" class="body-1 contact-number hover-underline">+237 621 311 232</a>
 
             <a href="#" class="btn btn-primary">
               <span class="text text-1">Read More</span>
@@ -501,8 +525,7 @@
             <h2 class="headline-1 section-title">Lobster Tortellini</h2>
 
             <p class="section-text">
-              Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
-              industrys standard dummy text ever since the when an unknown printer took a galley of type.
+              Modern eastern australian dish with seasoned ingredients and finned grained green leaves and an extra appetizer. Cheap and unique.
             </p>
 
             <div class="wrapper">
@@ -715,7 +738,7 @@
             During winter daily from <span class="span">7:00 pm</span> to <span class="span">9:00 pm</span>
           </p>
 
-          <a href="#" class="btn btn-primary">
+          <a href="menu.html" class="btn btn-primary">
             <span class="text text-1">View All Menu</span>
 
             <span class="text text-2" aria-hidden="true">View All Menu</span>
@@ -782,7 +805,7 @@
               <h2 class="headline-1 text-center">Online Reservation</h2>
 
               <p class="form-text text-center">
-                Booking request <a href="tel:+88123123456" class="link">+88-123-123456</a>
+                Booking request <a href="tel:+237621321232" class="link">+237 621 321 232</a>
                 or fill out the order form
               </p>
 
@@ -822,7 +845,6 @@
                   <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
 
                   <select name="person" class="input-field">
-                    <option value="08:00am">08 : 00 am</option>
                     <option value="09:00am">09 : 00 am</option>
                     <option value="010:00am">10 : 00 am</option>
                     <option value="011:00am">11 : 00 am</option>
@@ -860,15 +882,15 @@
 
               <p class="contact-label">Booking Request</p>
 
-              <a href="tel:+88123123456" class="body-1 contact-number hover-underline">+88-123-123456</a>
+              <a href="tel:+237621321232" class="body-1 contact-number hover-underline">+237 621 321 232</a>
 
               <div class="separator"></div>
 
               <p class="contact-label">Location</p>
 
               <address class="body-4">
-                Restaurant St, Delicious City, <br>
-                London 9578, UK
+                Restaurant At, Delicious City, <br>
+                Po-Box 9578, CM
               </address>
 
               <p class="contact-label">Lunch Time</p>
@@ -918,7 +940,7 @@
 
                 <h3 class="title-2 card-title">Hygienic Food</h3>
 
-                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+                <p class="label-1 card-text">Clean and treated upon. We are careful of your health</p>
 
               </div>
             </li>
@@ -932,7 +954,7 @@
 
                 <h3 class="title-2 card-title">Fresh Environment</h3>
 
-                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+                <p class="label-1 card-text">Clean environments for clean results.</p>
 
               </div>
             </li>
@@ -946,7 +968,7 @@
 
                 <h3 class="title-2 card-title">Skilled Chefs</h3>
 
-                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+                <p class="label-1 card-text">Skilled chefs with notion and ethics.</p>
 
               </div>
             </li>
@@ -960,7 +982,7 @@
 
                 <h3 class="title-2 card-title">Event & Party</h3>
 
-                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+                <p class="label-1 card-text">Book us for parties, celebrations etc...</p>
 
               </div>
             </li>
@@ -1091,15 +1113,15 @@
           </a>
 
           <address class="body-4">
-            Restaurant St, Delicious City, London 9578, UK
+            Restaurant At, Delicious City, Po-Box 9578, CM
           </address>
 
-          <a href="mailto:booking@grilli.com" class="body-4 contact-link">booking@grilli.com</a>
+          <a href="mailto:grill@deliciouscity.com" class="body-4 contact-link">grill@deliciouscity.com</a>
 
-          <a href="tel:+88123123456" class="body-4 contact-link">Booking Request : +88-123-123456</a>
+          <a href="tel:+237621311232" class="body-4 contact-link">Booking Request : +237 621 311 232</a>
 
           <p class="body-4">
-            Open : 09:00 am - 01:00 pm
+            Open : 09:00 am - 10:00 pm
           </p>
 
           <div class="wrapper">
@@ -1137,19 +1159,19 @@
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Menus</a>
+            <a href="#menu" class="label-2 footer-link hover-underline">Menus</a>
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">About Us</a>
+            <a href="#about" class="label-2 footer-link hover-underline">About Us</a>
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Our Chefs</a>
+            <a href="#chefs" class="label-2 footer-link hover-underline">Our Chefs</a>
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Contact</a>
+            <a href="#contact" class="label-2 footer-link hover-underline">Contact</a>
           </li>
 
         </ul>
@@ -1157,23 +1179,23 @@
         <ul class="footer-list">
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+            <a href="https://facebook.com" class="label-2 footer-link hover-underline">Facebook</a>
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+            <a href="https://instagram.com" class="label-2 footer-link hover-underline">Instagram</a>
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+            <a href="https://twitter.com" class="label-2 footer-link hover-underline">Twitter</a>
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+            <a href="https://youtube.com" class="label-2 footer-link hover-underline">Youtube</a>
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Google Map</a>
+            <a href="https://maps.google.com" class="label-2 footer-link hover-underline">Google Map</a>
           </li>
 
         </ul>
@@ -1183,8 +1205,8 @@
       <div class="footer-bottom">
 
         <p class="copyright">
-          &copy; 2022 Grilli. All Rights Reserved | Crafted by <a href="https://github.com/codewithsadee"
-            target="_blank" class="link">codewithsadee</a>
+          &copy; 2024 Grilli. All Rights Reserved | Crafted by <a href="https://portfolio-nsamadavidazaah.vercel.app/"
+            target="_blank" class="link">Nsama David Azaah</a>
         </p>
 
       </div>
